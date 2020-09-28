@@ -21,7 +21,7 @@ button.addEventListener('click', () => {
     let correctAnswers = 0;
 
 const mostDays = prompt('Aight ${userName}! Do I spend most of my days at the mall?');
-if (!countAsAYes(mostDays)) {
+if (countAsNo(mostDays)) {
     correctAnswers++;
 }
 
@@ -34,5 +34,8 @@ const bornNRaised = prompt('Most important question. Was I born and raised in We
 if (countAsYes(bornNRaised)) {
     correctAnswers++;
 }
+alert('Finished, to see how you did check the page for your results');
+
+results.textContent = 'Hey ${userName}, you got ${correctAnswers} correct out of 3.';
 
 });
