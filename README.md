@@ -7,19 +7,19 @@
 Create an "About Me" page, with a quiz based on the content of the page that the user can complete.
 
 ## Learning Objectives
-- Use `document.getElementById` to _get_ HTML Elements in JavaScript
+[x] Use `document.getElementById` to _get_ HTML Elements in JavaScript
 - Use `document.getElementById` to _set_ the textContent of HTML Elements in JavaScript
-- Use an event listener to launch prompts
-- Evaluating user input with control flow
-- Using functions to 'abstract' complex or repeated logic
-- Manipulating the DOM based on changing global state
+[x] Use an event listener to launch prompts
+[x] Evaluating user input with control flow
+[x] Using functions to 'abstract' complex or repeated logic
+[x] Manipulating the DOM based on changing global state
 
 ---
 
 ## Standard Setup Process
 
  [x]Create a repo called `lab-01-quiz-page` on Github
-    - make sure to click add a `README.md`
+    [x] make sure to click add a `README.md`
 [x]Copy the URL of the new repo
 [x]From the command line (terminal) clone your repo:
     [x] `git clone <url>`
@@ -34,22 +34,22 @@ The topic can be autobiographical ("About Me") or you are welcome to pick a comm
 
 Your web page should contain:
 
-* Introductory and general content about you or your theme.
-* At least one image
-* At least three sections, each of which is a blurb about you or the topic
-* Include headers as appropriate
-* Use at least one unordered (bullet) list and one ordered (numbered) list
-* A button for the user to take a quiz, and a place to put the quiz result
+[x] Introductory and general content about you or your theme.
+[x] At least one image
+[x] At least three sections, each of which is a blurb about you or the topic
+[x] Include headers as appropriate
+[ ] Use at least one unordered (bullet) list and one ordered (numbered) list
+[x] A button for the user to take a quiz, and a place to put the quiz result
 
 ---
 
 ## HTML & CSS
 
-1. Create an HTML file (`index.html`)
-1. Create and link a CSS file (`main.css`)
-1. Add content to your HTML file including all the required sections listed
-1. Add CSS for styling for your page and some layout. See below for styling detail
-1. **Commit** your work as you go with a message that describes the purpose (why?) of the commit.
+[x] Create an HTML file (`index.html`)
+[x] Create and link a CSS file (`main.css`)
+[x] Add content to your HTML file including all the required sections listed
+[x] Add CSS for styling for your page and some layout. See below for styling detail
+[x] **Commit** your work as you go with a message that describes the purpose (why?) of the commit.
 
 ### Styles
 
@@ -81,9 +81,9 @@ The quiz will be asking yes/no questions, but receiving a text response from the
 TDD an `translateToAYes` function that that returns the string `'yes'` for the responses you want to be "yes" (otherwise it should return `'no'`). Write a test for each `"yes"` text that your app will accept. Then write a couple tests for common "no" responses. 
 
 The function:
-1. Should be exported from `/src/translate-to-a-yes/js`
-1. The test should live at `/test/translate-to-a-yes.test.js`
-1. Don't forget to `import './translate-to-a-yes.test.js';` in file `/test/tests.js`!
+[x] Should be exported from `/src/translate-to-a-yes/js`
+[x] The test should live at `/test/translate-to-a-yes.test.js`
+[x] Don't forget to `import './translate-to-a-yes.test.js';` in file `/test/tests.js`!
 
 ### App
 
@@ -91,12 +91,12 @@ Add an `app.js` file that is imported via a `<script>` tag in `index.html`.
 
 #### Sections
 
-1. Imports:
+[x] Imports:
     - Your `translateToAYes` function
-1. Reference needed DOM elements:
+[x] Reference needed DOM elements:
     - The button the user will click for taking the quiz
     - The element to which you will write the quiz results
-1. Add event listeners:
+[x] Add event listeners:
     - Subscribe to the button's click event using `addEventListener`:
     ```js
     button.addEventListener('click', () => {
@@ -108,12 +108,12 @@ Add an `app.js` file that is imported via a `<script>` tag in `index.html`.
 
 Add code in the button click handler function:
 
-1. Ask the user's name. Their name should be used in subsequent prompts
-1. Confirm that the user really wants to take the quiz. If not, `return` from your function.
-1. Three YES/NO questions about you. Use your `translateToAYes` function to determine the user's
+[x] Ask the user's name. Their name should be used in subsequent prompts
+[x] Confirm that the user really wants to take the quiz. If not, `return` from your function.
+[x] Three YES/NO questions about you. Use your `translateToAYes` function to determine the user's
 response, then compare to the correct answer. Track number of correct responses.
-1. Alert the user that the quiz is complete and their results will now be written to the webpage.
-1. Write a response to the page with their name and number correct, for example: "Okay Bernice, you got 2/3 correct". 
+[x] Alert the user that the quiz is complete and their results will now be written to the webpage.
+[x] Write a response to the page with their name and number correct, for example: "Okay Bernice, you got 2/3 correct". 
 1. STRETCH goal(s): 
   - Add a class to style the result differently based on
   good or bad score.

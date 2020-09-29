@@ -33,7 +33,7 @@ const bornNRaised = prompt(`Most important question. Was I born and raised in We
 if (countAsAYes(bornNRaised)) {
     correctAnswers++;
 }
-alert('Finished, to see how you did check the page for your results');
+alert('See how you did by checking the page for your results');
 
 results.textContent = `Hey ${userName}, you got ${correctAnswers} correct out of 3.`;
 
