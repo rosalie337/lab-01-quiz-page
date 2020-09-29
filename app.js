@@ -1,4 +1,4 @@
-import { countAsAYes } from './count-as-yes.js'
+import { countAsAYes, countAsNo } from './count-as-yes.js'
 
 // import functions and grab DOM elements
 const button = document.getElementById('quiz-button');
@@ -17,25 +17,24 @@ button.addEventListener('click', () => {
         alert('Next time perhaps?');
         return;
     }
-
     let correctAnswers = 0;
 
-const mostDays = prompt('Aight ${userName}! Do I spend most of my days at the mall?');
+const mostDays = prompt(`Aight ${userName}! Do I spend most of my days at the mall?`);
 if (countAsNo(mostDays)) {
     correctAnswers++;
 }
 
-const yellCabbie = prompt('Did I yell to the cabbie, - "Yo homes smell ya later!"');
+const yellCabbie = prompt(`Did I yell to the cabbie, - "Yo homes smell ya later!"`);
 if (countAsAYes(yellCabbie)) {
     correctAnswers++;
 }
 
-const bornNRaised = prompt('Most important question. Was I born and raised in West Philadelphia?');
-if (countAsYes(bornNRaised)) {
+const bornNRaised = prompt(`Most important question. Was I born and raised in West Philadelphia?`);
+if (countAsAYes(bornNRaised)) {
     correctAnswers++;
 }
 alert('Finished, to see how you did check the page for your results');
 
-results.textContent = 'Hey ${userName}, you got ${correctAnswers} correct out of 3.';
+results.textContent = `Hey ${userName}, you got ${correctAnswers} correct out of 3.`;
 
 });
